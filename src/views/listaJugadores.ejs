@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Jugadores</title>
+    <link rel="stylesheet" href="lista.css">
+
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista del Día</title>
+        <link rel="stylesheet" href="lista.css">
+    </head>
+    <body>
+        <h1>Lista del día</h1>
+        <div class="container">
+            <ul class="jugadores">
+                <% jugadores.forEach(jugador => { %>
+                    <li class="jugador">
+                        <div class="jugador-info">
+                            <span>Matrícula: <%= jugador.matricula %></span>
+                            <span>Nombre: <%= jugador.nombre_completo %></span>
+                        </div>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+    </body>
+    </html>
+    

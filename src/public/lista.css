@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3c0861; 
+}
+
+
+h1 {
+    text-align: center;
+    color: white; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.jugadores {
+    list-style: none;
+    padding: 0;
+}
+
+.jugador {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #69278f;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+}
+
+.jugador:hover {
+    background-color: #ab46c5; 
+}
+
+.jugador-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.jugador-info span {
+    margin-bottom: 5px;
+    color: #fff; 
+}
+
+
+
